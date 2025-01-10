@@ -2413,8 +2413,7 @@ dependencies = [
 [[package]]
 name = "pilota-thrift-parser"
 version = "0.11.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6f96e098d21a8d4f88242e9523140036a0e31bde96edc915c7b5ed24e32980c8"
+source = "git+https://github.com/kubroid/pilota.git?branch=required_parameters_override#a54c2a9ad86fa6e26582320fb9845cf242983e8e"
 dependencies = [
  "nom",
 ]
@@ -4799,3 +4798,8 @@ dependencies = [
  "quote",
  "syn 2.0.89",
 ]
+
+[[patch.unused]]
+name = "pilota-build"
+version = "0.11.28"
+source = "git+https://github.com/kubroid/pilota.git?branch=required_parameters_override#a54c2a9ad86fa6e26582320fb9845cf242983e8e"
