@@ -41,6 +41,6 @@ struct ObjResp {
 }
 
 service EchoServer {
-    Response Echo(1: Request req)(pilota.required = "override")
+    Response Echo(1: Request req)
     ObjResp TestObj(1: ObjReq req)(api.post = '/test/obj/:action', api.baseurl = 'example.com', api.param = 'true', api.serializer = 'json')
 }

@@ -15,9 +15,9 @@ members = [
 ]
 resolver = "2"
 
-[patch.crates-io]
-pilota-thrift-parser = {git = "https://github.com/kubroid/pilota.git", branch = "required_parameters_override", subdir="pilota-thrift-parser"}
-pilota-build = {git = "https://github.com/kubroid/pilota.git", branch = "required_parameters_override", subdir="pilota-build"}
+#[patch.crates-io]
+#pilota-thrift-parser = {git = "https://github.com/kubroid/pilota.git", branch = "required_parameters_override", subdir="pilota-thrift-parser"}
+#pilota-build = {git = "https://github.com/kubroid/pilota.git", branch = "required_parameters_override", subdir="pilota-build"}
 
 [workspace.package]
 authors = ["Volo Team <volo@cloudwego.io>"]
@@ -28,9 +28,9 @@ license = "MIT OR Apache-2.0"
 rust-version = "1.80.0"
 
 [workspace.dependencies]
-pilota = "0.11"
-pilota-build = "0.11"
-pilota-thrift-parser = "0.11"
+pilota = {git = "https://github.com/kubroid/pilota.git", branch = "required_parameters_override"}
+pilota-build = {git = "https://github.com/kubroid/pilota.git", branch = "required_parameters_override", subdir="pilota-build"}
+pilota-thrift-parser = {git = "https://github.com/kubroid/pilota.git", branch = "required_parameters_override", subdir="pilota-thrift-parser"}
 # pilota = { git = "https://github.com/cloudwego/pilota.git", branch = "main" }
 # pilota-build = { git = "https://github.com/cloudwego/pilota.git", branch = "main" }
 # pilota-thrift-parser = { git = "https://github.com/cloudwego/pilota.git", branch = "main" }
